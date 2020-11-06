@@ -96,11 +96,8 @@ class Day extends Component {
         testID={this.props.testID}
         style={containerStyle}
         onPress={this.onDayPress}
-        onLongPress={this.onDayLongPress}
         activeOpacity={activeOpacity}
         disabled={shouldDisableTouchEvent}
-        accessibilityRole={isDisabled ? undefined : 'button'}
-        accessibilityLabel={this.props.accessibilityLabel}
       >
         <Text allowFontScaling={false} style={textStyle}>{String(this.props.children)}</Text>
         <Dot
